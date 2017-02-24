@@ -29,5 +29,15 @@
   "devDependencies": {
     "jsmd": "0.3.1",
     "tape": "4.6.3"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": "es2015"
+        }
+      ]
+    ]
   }
 }
