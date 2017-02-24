@@ -4,7 +4,7 @@
   "description": "Have two arrays whose elements have a one-to-many relationship with each other?  Combine them with this",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js"
+    "test": "tape test.js && jsmd readme.md"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/TehShrike/one-to-many-array-zip/issues"
   },
-  "homepage": "https://github.com/TehShrike/one-to-many-array-zip#readme"
+  "homepage": "https://github.com/TehShrike/one-to-many-array-zip#readme",
+  "devDependencies": {
+    "jsmd": "0.3.1",
+    "tape": "4.6.3"
+  }
 }
