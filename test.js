@@ -59,16 +59,17 @@ test(`Handles parents without matching children`, t => {
 })
 
 test(`Throws if there are children without a match`, t => {
-	t.throws(() => oneToManyZip([ 1, 2 ], [ 1, 2, 2, 3 ], (a, b) => a === b))
+	t.throws(() => oneToManyZip([ 1, 2 ], [ 1, 2, 2, 3 ], (a, b) => a === b), /1 unmatched/)
 
 	t.end()
 })
 
 test(`invalid inputs`, t => {
-	t.throws(() => oneToManyZip())
-	t.throws(() => oneToManyZip([]))
-	t.throws(() => oneToManyZip([], () => true))
-	t.throws(() => oneToManyZip({}, {}, () => true))
+	t.throws(() => oneToManyZip(), /first/)
+	t.throws(() => oneToManyZip([]), /second/)
+	t.throws(() => oneToManyZip([], () => true), /second/)
+	t.throws(() => oneToManyZip({}, {}, () => true), /first/)
+	t.throws(() => oneToManyZip([], [], []), /third/)
 
 	t.end()
 })

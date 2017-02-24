@@ -1,6 +1,6 @@
 module.exports = function oneToManyZip(oneArray, manyArray, compareFn) {
 	assert(Array.isArray(oneArray), 'Expected first argument to be an array')
-	assert(Array.isArray(oneArray), 'Expected second argument to be an array')
+	assert(Array.isArray(manyArray), 'Expected second argument to be an array')
 	assert(typeof compareFn === 'function', 'Expected third argument to be a function')
 
 	const output = []
