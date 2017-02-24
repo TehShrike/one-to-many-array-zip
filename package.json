@@ -1,6 +1,6 @@
 {
   "name": "one-to-many-array-zip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Have two arrays whose elements have a one-to-many relationship with each other?  Combine them with this",
   "main": "index.js",
   "scripts": {
