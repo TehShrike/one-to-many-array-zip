@@ -1,0 +1,29 @@
+{
+  "name": "one-to-many-array-zip",
+  "version": "1.0.0",
+  "description": "Have two arrays whose elements have a one-to-many relationship with each other?  Combine them with this",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TehShrike/one-to-many-array-zip.git"
+  },
+  "keywords": [
+    "array",
+    "combine",
+    "zip",
+    "1:m",
+    "m:1",
+    "many",
+    "to",
+    "one"
+  ],
+  "author": "TehShrike",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/TehShrike/one-to-many-array-zip/issues"
+  },
+  "homepage": "https://github.com/TehShrike/one-to-many-array-zip#readme"
+}
